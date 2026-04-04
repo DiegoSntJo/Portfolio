@@ -8,6 +8,13 @@ interface Project {
   tags: string[];
   github?: string;
   demo?: string;
+  created?: string;
+  year?: number;
+}
+
+interface ProjectCardProps {
+  project: Project;
+  createdTitle: string;
 }
 
 const projectsContent = {
@@ -17,24 +24,28 @@ const projectsContent = {
     subtitle: "Uma seleção do que venho construindo.",
     mainTitle: "Projetos Principais",
     gamesTitle: "Interativos",
+    createdTitle: "Criado em ",
     mainProjects: [
       { name: "Clínica Médica",
         description: "Site comercial completo para clínica",
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "#",
+        year: 2020,
       },
       { name: "Academia",
         description: "Landing page comercial para academia",
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "#",
+        year: 2021,
       },
       { name: "Restaurante",
         description: "Cardápio digital e sistema de pedidos",
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "#",
+        year: 2021,
       },
       {
         name: "Learning Log",
@@ -42,6 +53,7 @@ const projectsContent = {
         tags: ["Django"],
         github: "#",
         demo: "#",
+        year: 2025,
       },
       {
         name: "Dashboard de Suporte",
@@ -49,6 +61,7 @@ const projectsContent = {
         tags: ["Next.js", "Prisma", "PostgreSQL", "WebSocket"],
         github: "#",
         demo: "#",
+        year: 2025,
       },
     ],
     gameProjects: [
@@ -56,6 +69,7 @@ const projectsContent = {
         description: "Jogo completo desenvolvido durante a faculdade.",
         tags: ["Construct 3"],
         demo: "https://www.construct.net/en/free-online-games/yellowsecurity-64859/play",
+        year: 2024,
       },
       {
         name: "Enquetes",
@@ -63,6 +77,7 @@ const projectsContent = {
         tags: ["Django"],
         github: "#",
         demo: "https://enquetes-jk3e.onrender.com/",
+        year: 2025,
       },
       { 
         name: "SuperTrunfo Pokémon RBY",
@@ -70,6 +85,7 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://super-trunfo-pokemon.vercel.app/",
+        year: 2021,
       },
       { 
         name: "BlackJack",
@@ -77,6 +93,7 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://21-blackjack.vercel.app/",
+        year: 2021,
       },
       { 
         name: "Tela de Seleção - Mega Man 3",
@@ -84,6 +101,7 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://mega-man-3-stage-select.vercel.app/",
+        year: 2021,
       },
       { 
         name: "Tela de Seleção - Street Fighter II",
@@ -91,6 +109,7 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://street-fighter-2-selection-screen.vercel.app/",
+        year: 2021,
       },
     ],
   },
@@ -100,24 +119,28 @@ const projectsContent = {
     subtitle: "A selection of what I've been building.",
     mainTitle: "Main Projects",
     gamesTitle: "Interactive Games",
+    createdTitle: "Created in ",
     mainProjects: [
       { name: "Medical Clinic",
         description: "Full commercial website for a clinic",
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "#",
+        year: 2020,
       },
       { name: "Gym",
         description: "Commercial landing page for a gym",
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "#",
+        year: 2021,
       },
       { name: "Restaurant",
         description: "Digital menu and ordering system",
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "#",
+        year: 2021,
       },
       {
         name: "Learning Log",
@@ -125,6 +148,7 @@ const projectsContent = {
         tags: ["Django"],
         github: "#",
         demo: "#",
+        year: 2025,
       },
       {
         name: "Support Dashboard",
@@ -132,6 +156,7 @@ const projectsContent = {
         tags: ["Next.js", "Prisma", "PostgreSQL", "WebSocket"],
         github: "#",
         demo: "#",
+        year: 2025,
       },
     ],
     gameProjects: [
@@ -139,6 +164,7 @@ const projectsContent = {
         description: "Complete game developed during college.",
         tags: ["Construct 3"],
         demo: "https://www.construct.net/en/free-online-games/yellowsecurity-64859/play",
+        year: 2024,
       },
       {
         name: "Polls",
@@ -146,6 +172,7 @@ const projectsContent = {
         tags: ["Django"],
         github: "#",
         demo: "https://enquetes-jk3e.onrender.com/",
+        year: 2025,
       },
       { 
         name: "SuperCard Pokémon RBY",
@@ -153,6 +180,7 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://super-trunfo-pokemon.vercel.app/",
+        year: 2021,
       },
       { 
         name: "BlackJack",
@@ -160,6 +188,7 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://21-blackjack.vercel.app/",
+        year: 2021,
       },
       { 
         name: "Selection Screen - Mega Man 3",
@@ -167,6 +196,7 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://mega-man-3-stage-select.vercel.app/",
+        year: 2021,
       },
       { 
         name: "Selection Screen - Street Fighter II",
@@ -174,12 +204,13 @@ const projectsContent = {
         tags: ["PHP", "HTML", "CSS", "JS"],
         github: "#",
         demo: "https://street-fighter-2-selection-screen.vercel.app/",
+        year: 2021,
       },
     ],
   },
 };
 
-const ProjectCard = ({ project }: { project: Project }) => (
+const ProjectCard = ({ project, createdTitle }: ProjectCardProps) => (
   <motion.div
     className="glass-card rounded-lg p-6 group hover:border-primary/30 transition-all duration-300 flex flex-col"
     whileHover={{ y: -4 }}
@@ -205,6 +236,9 @@ const ProjectCard = ({ project }: { project: Project }) => (
         <a href={project.demo} className="text-muted-foreground hover:text-secondary transition-colors" target="_blank" rel="noopener noreferrer">
           <ExternalLink className="h-4 w-4" />
         </a>
+      )}
+      {project.year && (
+        <span className="text-muted-foreground text-sm">{createdTitle}{project.year}</span>
       )}
     </div>
   </motion.div>
@@ -243,7 +277,7 @@ const ProjectsSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <ProjectCard project={p} />
+              <ProjectCard project={p} createdTitle={t.createdTitle} />
             </motion.div>
           ))}
         </div>
@@ -261,7 +295,7 @@ const ProjectsSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <ProjectCard project={p} />
+              <ProjectCard project={p} createdTitle={t.createdTitle} />
             </motion.div>
           ))}
         </div>

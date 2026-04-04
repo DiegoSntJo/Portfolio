@@ -11,16 +11,16 @@ const educationContent = {
         type: "Graduação",
         icon: <GraduationCap className="h-5 w-5 text-primary" />,
         items: [
-          { name: "Análise e Desenvolvimento de Sistemas", institution: "Universidade", status: "Concluído" },
-          { name: "Sistemas de Informação", institution: "Universidade", status: "Concluído" },
+          { name: "Redes de Computadores", institution: "Estácio de Sá", status: "Concluído" },
+          { name: "Análise e Desenvolvimento de Sistemas", institution: "UNINASSAU", status: "Concluído" },
         ],
       },
       {
         type: "Pós-Graduação",
         icon: <BookOpen className="h-5 w-5 text-orange-500" />,
         items: [
-          { name: "Engenharia de Software", institution: "Instituição de Ensino", status: "Concluído" },
-          { name: "Arquitetura de Soluções Cloud", institution: "Instituição de Ensino", status: "Em andamento 🟡" },
+          { name: "Análise de Sistemas", institution: "Faculdade Focus", status: "Concluído" },
+          { name: "Computação na Educação", institution: "IFSULDEMINAS", status: "Em andamento 🟡" },
         ],
       },
     ],
@@ -34,16 +34,16 @@ const educationContent = {
         type: "Bachelor's",
         icon: <GraduationCap className="h-5 w-5 text-primary" />,
         items: [
-          { name: "Systems Analysis and Development", institution: "University", status: "Completed" },
-          { name: "Information Systems", institution: "University", status: "Completed" },
+          { name: "Computer Networks", institution: "Estácio de Sá", status: "Completed" },
+          { name: "Systems Analysis and Development", institution: "UNINASSAU", status: "Completed" },
         ],
       },
       {
         type: "Postgraduate",
         icon: <BookOpen className="h-5 w-5 text-orange-500" />,
         items: [
-          { name: "Software Engineering", institution: "Educational Institution", status: "Completed" },
-          { name: "Cloud Solutions Architecture", institution: "Educational Institution", status: "In progress 🟡" },
+          { name: "Software Engineering", institution: "Faculdade Focus", status: "Completed" },
+          { name: "Computing in Education Systems", institution: "IFSULDEMINAS", status: "In progress 🟡" },
         ],
       },
     ],
