@@ -22,7 +22,7 @@ const projectsContent = {
     title: "Projetos em ",
     titleHighlight: "Destaque",
     subtitle: "Uma seleção do que venho construindo.",
-    mainTitle: "Projetos Principais",
+    mainTitle: "Websites",
     gamesTitle: "Interativos",
     createdTitle: "Criado em ",
     mainProjects: [
@@ -35,9 +35,9 @@ const projectsContent = {
       },
       { name: "Academia",
         description: "Landing page comercial para academia",
-        tags: ["PHP", "HTML", "CSS", "JS"],
+        tags: ["HTML", "CSS", "JS"],
         github: "#",
-        demo: "#",
+        demo: "https://diegosntjo.github.io/ModeloSiteAcademia/",
         year: 2021,
       },
       { name: "Restaurante",
@@ -52,15 +52,7 @@ const projectsContent = {
         description: "Diário de aprendizados para documentar estudos diários",
         tags: ["Django"],
         github: "#",
-        demo: "#",
-        year: 2025,
-      },
-      {
-        name: "Dashboard de Suporte",
-        description: "Painel de controle para tickets de suporte com métricas em tempo real e automação de respostas.",
-        tags: ["Next.js", "Prisma", "PostgreSQL", "WebSocket"],
-        github: "#",
-        demo: "#",
+        demo: "https://learning-log-n639.onrender.com/",
         year: 2025,
       },
     ],
@@ -117,8 +109,8 @@ const projectsContent = {
     title: "Featured ",
     titleHighlight: "Projects",
     subtitle: "A selection of what I've been building.",
-    mainTitle: "Main Projects",
-    gamesTitle: "Interactive Games",
+    mainTitle: "Websites",
+    gamesTitle: "Interactives",
     createdTitle: "Created in ",
     mainProjects: [
       { name: "Medical Clinic",
@@ -130,9 +122,9 @@ const projectsContent = {
       },
       { name: "Gym",
         description: "Commercial landing page for a gym",
-        tags: ["PHP", "HTML", "CSS", "JS"],
+        tags: ["HTML", "CSS", "JS"],
         github: "#",
-        demo: "#",
+        demo: "https://diegosntjo.github.io/ModeloSiteAcademia/",
         year: 2021,
       },
       { name: "Restaurant",
@@ -147,15 +139,7 @@ const projectsContent = {
         description: "Learning diary to document daily studies",
         tags: ["Django"],
         github: "#",
-        demo: "#",
-        year: 2025,
-      },
-      {
-        name: "Support Dashboard",
-        description: "Control panel for support tickets with real-time metrics and response automation.",
-        tags: ["Next.js", "Prisma", "PostgreSQL", "WebSocket"],
-        github: "#",
-        demo: "#",
+        demo: "https://learning-log-n639.onrender.com/",
         year: 2025,
       },
     ],
@@ -268,7 +252,7 @@ const ProjectsSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
           <span className="w-2 h-2 rounded-full bg-primary" />
           {t.mainTitle}
         </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-6">
           {t.mainProjects.map((p, i) => (
             <motion.div
               key={p.name}
@@ -282,11 +266,13 @@ const ProjectsSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
           ))}
         </div>
 
+        <br />
+
         <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-orange-500" />
           {t.gamesTitle}
         </h3>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {t.gameProjects.map((p, i) => (
             <motion.div
               key={p.name}

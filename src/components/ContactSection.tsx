@@ -8,9 +8,9 @@ const contactContent = {
     titleHighlight: "Conversar?",
     subtitle: "Estou aberto a oportunidades, projetos e boas conversas sobre tecnologia.",
     links: [
-      { icon: Github, label: "GitHub", href: "https://github.com/diegosaraujo", color: "hover:text-primary" },
-      { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/diegosaraujo", color: "hover:text-primary" },
-      { icon: Mail, label: "Email", href: "mailto:diego@email.com", color: "hover:text-orange-500" },
+      { icon: Github, label: "GitHub", href: "https://github.com/DiegoSntJo", color: "hover:text-primary" },
+      { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/diego-santos-de-araújo-2b9047186", color: "hover:text-primary" },
+      { icon: Mail, label: "Email", href: "mailto:finndiego@hotmail.com", color: "hover:text-orange-500" },
     ],
     button: "Agendar Conversa",
   },
@@ -19,9 +19,9 @@ const contactContent = {
     titleHighlight: "Talk?",
     subtitle: "I'm open to opportunities, projects and good tech talks.",
     links: [
-      { icon: Github, label: "GitHub", href: "https://github.com/diegosaraujo", color: "hover:text-primary" },
-      { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/diegosaraujo", color: "hover:text-primary" },
-      { icon: Mail, label: "Email", href: "mailto:diego@email.com", color: "hover:text-orange-500" },
+      { icon: Github, label: "GitHub", href: "https://github.com/DiegoSntJo", color: "hover:text-primary" },
+      { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/diego-santos-de-araújo-2b9047186", color: "hover:text-primary" },
+      { icon: Mail, label: "Email", href: "mailto:finndiego@hotmail.com", color: "hover:text-orange-500" },
     ],
     button: "Schedule a Chat",
   }
