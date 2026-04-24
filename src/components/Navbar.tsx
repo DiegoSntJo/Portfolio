@@ -2,14 +2,29 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "../App";
 
-const navItems = [
-  { label: "Sobre", href: "#sobre" },
-  { label: "Stack", href: "#stack" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Experiência", href: "#experiencia" },
-  { label: "Formação", href: "#formacao" },
-  { label: "Contato", href: "#contato" },
-];
+const navItems = {
+  pt: {
+    items: [
+      {label: "Sobre", href: "#sobre",},
+      {label: "Stack", href: "#stack",},
+      {label: "Projetos", href: "#projetos",},
+      {label: "Experiência", href: "#experiencia",},
+      {label: "Formação", href: "#formacao",},
+      {label: "Contato", href: "#contato",},
+    ],
+  },
+
+  en: {
+    items: [
+      {label: "About", href: "#sobre",},
+      {label: "Stack", href: "#stack",},
+      {label: "Projects", href: "#projetos",},
+      {label: "Experience", href: "#experiencia",},
+      {label: "Academic", href: "#formacao",},
+      {label: "Contact", href: "#contato",},
+    ],
+  }
+};
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -60,7 +75,7 @@ const Navbar = () => {
             {lang === "pt" ? "🇺🇸 EN" : "🇧🇷 PT"}
           </button>
           <ul className="flex gap-6">
-            {navItems.map((item) => (
+            {navItems[lang]?.items.map((item) => (
               <li key={item.label}>
                 <a
                   href={item.href}
@@ -78,7 +93,7 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden glass-card border-t border-border/50 pb-4">
           <ul className="flex flex-col px-4">
-            {navItems.map((item) => (
+            {navItems[lang]?.items.map((item) => (
               <li key={item.label}>
                 <a
                   href={item.href}
