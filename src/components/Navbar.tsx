@@ -18,8 +18,18 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/50">
       <div className="container flex items-center justify-between h-16 px-4">
-        <a href="#" className="text-lg font-bold text-gradient-cyan">
-          DSA
+        <a href="" className="flex items-center gap-2">
+          <div
+            style={{
+              backgroundImage: 'url(/Sign.png)',
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+              width: 120,
+              height: 60,
+            }}
+            aria-label="Logo"
+          />
         </a>
 
         {/* Botão de idioma (mobile) ao lado do menu hamburguer */}

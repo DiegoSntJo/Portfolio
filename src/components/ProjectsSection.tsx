@@ -44,7 +44,7 @@ const projectsContent = {
         description: "Sistema Saas multi-tenant para gestão de academias de artes marciais",
         tags: ["React", "TypeScript", "Python", "PostgreSQL"],
         github: "#",
-        demo: "#",
+        demo: "https://tatameweb.online/",
         year: 2026,
       },
       {
@@ -131,7 +131,7 @@ const projectsContent = {
         description: "Multi-tenant SaaS system for martial arts gym management",
         tags: ["React", "TypeScript", "Python", "PostgreSQL"],
         github: "#",
-        demo: "#",
+        demo: "https://tatameweb.online/",
         year: 2026,
       },
       {
