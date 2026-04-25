@@ -57,7 +57,7 @@ const projectsContent = {
         github: "#",
         demo: "https://tatameweb.online/",
         year: 2026,
-        thumbnail: "Media/TatameWeb - Dash.png",
+        thumbnail: "Media/TatameWeb.png",
       },
       {
         name: "Learning Log",
@@ -154,7 +154,7 @@ const projectsContent = {
         github: "#",
         demo: "https://tatameweb.online/",
         year: 2026,
-        thumbnail: "Media/TatameWeb - Dash.png",
+        thumbnail: "Media/TatameWeb.png",
       },
       {
         name: "Learning Log",
