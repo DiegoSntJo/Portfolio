@@ -54,7 +54,7 @@ const aboutContent = {
 const AboutSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
   const t = aboutContent[lang];
   return (
-    <section id="sobre" className="section-container">
+    <section id="sobre" className="section-container" style={{ backgroundColor: "#000000", backgroundImage: "url('https://www.transparenttextures.com/patterns/inspiration-geometry.png')", maxWidth: "none",}}>
       <motion.div
         className="flex justify-center mb-4"
         initial={{ opacity: 0, y: 20 }}

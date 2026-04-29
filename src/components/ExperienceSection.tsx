@@ -107,7 +107,7 @@ const experiencesContent = {
 const ExperienceSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
   const t = experiencesContent[lang];
   return (
-    <section id="experiencia" className="py-24 px-4">
+    <section id="experiencia" className="py-24 px-4" style={{ backgroundColor: "#000000", backgroundImage: "url('https://www.transparenttextures.com/patterns/shley-tree-1.png')",}}>
       <div className="container">
         <motion.div
           className="flex justify-center mb-4"

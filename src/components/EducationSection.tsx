@@ -53,7 +53,7 @@ const educationContent = {
 const EducationSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
   const t = educationContent[lang];
   return (
-    <section id="formacao" className="py-24 px-4">
+    <section id="formacao" className="py-24 px-4" style={{ backgroundColor: "#000000", backgroundImage: "url('https://www.transparenttextures.com/patterns/cubes.png')",}}>
       <div className="container">
         <motion.div
           className="flex justify-center mb-4"

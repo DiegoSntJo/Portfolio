@@ -277,7 +277,7 @@ const ProjectsSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
   // Seleciona os textos e dados conforme o idioma
   const t = projectsContent[lang];
   return (
-    <section id="projetos" className="py-24 px-4">
+    <section id="projetos" className="py-24 px-4" style={{ backgroundColor: "#000000", backgroundImage: "url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png')",}}>
       <div className="container">
         {/* Título da seção */}
         <motion.div

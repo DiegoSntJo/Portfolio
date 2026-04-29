@@ -34,7 +34,7 @@ const stackContent = {
 const StackSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
   const t = stackContent[lang];
   return (
-    <section id="stack" className="section-container">
+    <section id="stack" className="section-container" style={{ backgroundColor: "#000000", backgroundImage: "url('https://www.transparenttextures.com/patterns/squares.png')", maxWidth: "none",}}>
       <motion.div
         className="flex justify-center mb-4"
         initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ const StackSection = ({ lang = "pt" }: { lang?: "pt" | "en" }) => {
         {t.subtitle}
       </motion.p>
 
-      <div className="space-y-8">
+      <div className="space-y-8" style={{marginLeft: "10%"}}>
         {t.categories.map((cat, i) => (
           <motion.div
             key={cat.label}
